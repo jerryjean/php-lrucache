@@ -12,32 +12,32 @@ class LRUCache implements \Iterator {
     /**
      * @var int the current number of elements
      */
-    private $currentCapacity = 0;
+    protected $currentCapacity = 0;
 
     /**
      * @var Node[] representing a naive hashmap
      */
-    private $hashmap = [ ];
+    protected $hashmap = [ ];
 
     /**
      * @var Node representing the head of the list
      */
-    private $head;
+    protected $head;
 
     /**
      * @var int the max number of elements the cache supports
      */
-    private $maxCapacity;
+    protected $maxCapacity;
 
     /**
      * @var Node representing the tail of the list
      */
-    private $tail;
+    protected $tail;
 
     /**
      * @var Node
      */
-    private $workingNode;
+    protected $workingNode;
 
     /**
      * @param int $maxCapacity the max number of elements the cache allows
@@ -179,7 +179,7 @@ class LRUCache implements \Iterator {
      * @param Node $head the node object that represents the head of the list
      * @param Node $node the node to move to the head of the list
      */
-    private function attach ( Node $head, Node $node ) {
+    protected function attach ( Node $head, Node $node ) {
 
         // the soon to be second node in our list, currently the first one
         $secondNode = $head->get_next();
@@ -202,7 +202,7 @@ class LRUCache implements \Iterator {
      *
      * @param Node $node the node to remove from the list
      */
-    private function detach ( Node $node ) {
+    protected function detach ( Node $node ) {
 
         // point previous node to next node
         $node->get_previous()->set_next( $node->get_next() );
