@@ -2,7 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/justin-robinson/php-lrucache/badge.svg?branch=master)](https://coveralls.io/github/justin-robinson/php-lrucache?branch=master)
 # PHP LRU Cache implementation
 
-Forked form [https://github.com/justin-robinson/php-lrucache]
+Forked from [https://github.com/justin-robinson/php-lrucache]
 
 Changes
 * Make methods protected instead of private
