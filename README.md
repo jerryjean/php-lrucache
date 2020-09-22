@@ -5,9 +5,7 @@
 Forked form [https://github.com/justin-robinson/php-lrucache]
 
 Changes
-* Reduce cost of inserting to cache from O(n) to O(1)
-* Make cache iterable
-* Fix phpunit tests
+* Make methods protected instead of private
 
 ## Intro
 
