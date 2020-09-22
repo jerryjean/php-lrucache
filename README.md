@@ -2,7 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/justin-robinson/php-lrucache/badge.svg?branch=master)](https://coveralls.io/github/justin-robinson/php-lrucache?branch=master)
 # PHP LRU Cache implementation
 
-Forked from [https://github.com/rogeriopvl/php-lrucache][3]
+Forked form [https://github.com/justin-robinson/php-lrucache]
 
 Changes
 * Reduce cost of inserting to cache from O(n) to O(1)
@@ -28,7 +28,7 @@ This implementation is similar to a [LinkedHashMap][2]. Right now I'm just messi
 Add the package into your `composer.json` file:
 
     "require": {
-        "justin-robinson/lrucache": "dev-master"
+        "jerryjean/lrucache": "dev-master"
     }
 
 Then run the command:
